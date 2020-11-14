@@ -16,3 +16,8 @@
 	<string>
 	<sstream>
 
+1605297175 source:d:\outils\codeblocks\projets\net_temp\server\main.cpp
+	<iostream>
+	"SocketClient.h"
+	"SocketServer.h"
+

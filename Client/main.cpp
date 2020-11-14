@@ -11,7 +11,7 @@ void onError(errorStruct *e)
 
 int main()
 {
-    SocketClient client("127.0.0.1", 55555);
+    SocketClient client("127.0.0.1", 55555); /* Build connection */
     client.setErrorCallback(onError);
     client.connect();
 
