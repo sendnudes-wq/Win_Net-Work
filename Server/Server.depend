@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1605296231 source:d:\outils\codeblocks\projets\net_temp\server\socketclient.cpp
+	"SocketClient.h"
+
+1605270164 d:\outils\codeblocks\projets\net_temp\server\socketclient.h
+	<string>
+	<sstream>
+	<winsock2.h>
+	<iostream>
+
+1605296225 source:d:\outils\codeblocks\projets\net_temp\server\socketserver.cpp
+	"SocketServer.h"
+
+1605270160 d:\outils\codeblocks\projets\net_temp\server\socketserver.h
+	<winsock2.h>
+	<string>
+	<sstream>
+
