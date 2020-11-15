@@ -1,6 +1,6 @@
 #include <iostream>
 #include <fstream>
-#include "SocketClient.h"
+#include "../include/SocketClient.h"
 
 using namespace std;
 
@@ -9,26 +9,28 @@ void onError(errorStruct *e)
     cout << e->message << endl;
 }
 
+bool keep(string input)
+{
+    if (input.compare(0,4,"exit"))
+        return true;
+    else
+        return false;
+}
+
 int main()
 {
-    SocketClient client("127.0.0.1", 55555); /* Build connection */
-    client.setErrorCallback(onError);
+    bool keepalive = true;
+    SocketClient client("127.0.0.1",55555); /* Build connection */
+    client.setErrorCallback(onError);        /* Define behavior in case of error */
     client.connect();
 
     string str;
-    while(1)
+    while(keepalive)
     {
         cout << ">";
         getline(cin, str);
         client.send(str);
+        keepalive = keep(str);
     }
-
-    /* NEW */               //  You can now send streams this way
-
-    ifstream file("/path/to/file");
-    client.send(file);      // The server will receive the STRING CONTENT of the file.
-                            // But I'm working on a new version to receive the whole file directly (not as a string)
-    /* NEW */
-
     client.close();
 }

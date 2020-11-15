@@ -1,4 +1,4 @@
-#include "SocketServer.h"
+#include "../include/SocketServer.h"
 
 SocketServer::SocketServer(int port)
 {

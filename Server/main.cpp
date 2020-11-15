@@ -1,6 +1,6 @@
 #include <iostream>
-#include "SocketClient.h"
-#include "SocketServer.h"
+#include "../include/SocketClient.h"
+#include "../include/SocketServer.h"
 
 using namespace std;
 

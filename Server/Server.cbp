@@ -35,10 +35,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="SocketClient.cpp" />
-		<Unit filename="SocketClient.h" />
-		<Unit filename="SocketServer.cpp" />
-		<Unit filename="SocketServer.h" />
+		<Unit filename="../include/SocketClient.h" />
+		<Unit filename="../include/SocketServer.h" />
+		<Unit filename="../src/SocketClient.cpp" />
+		<Unit filename="../src/SocketServer.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>

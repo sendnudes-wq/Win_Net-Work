@@ -1,4 +1,4 @@
-#include "SocketClient.h"
+#include "../include/SocketClient.h"
 
 SocketClient::SocketClient(std::string ip, int port)
 {
